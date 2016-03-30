@@ -5,15 +5,15 @@
         <item
             android:id="@+id/nav_yokai"
             android:icon="@drawable/ic_pets_black_24dp"
-            android:title="Yokai" />
+            android:title="Yokai List" />
         <item
             android:id="@+id/nav_food"
             android:icon="@drawable/ic_local_dining_black_24dp"
-            android:title="Food" />
+            android:title="Favorite Food" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Fusion List" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"

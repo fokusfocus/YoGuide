@@ -8,12 +8,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.InputStream;
@@ -99,30 +97,30 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_yokai) {
             TextView view = (TextView) findViewById(R.id.main_page);
-            view.setVisibility(View.INVISIBLE);
+            view.setVisibility(View.GONE);
 
             WebView webView = (WebView)findViewById(R.id.web_view);
             webView.setVisibility(View.VISIBLE);
 
-            //displayWeb();
+            displayWeb();
 
-            LayoutInflater inflater = getLayoutInflater();
+            /*LayoutInflater inflater = getLayoutInflater();
             LinearLayout container = (LinearLayout) findViewById(R.id.content_main);
-            inflater.inflate(R.layout.activity_main, container);
+            inflater.inflate(R.layout.activity_main, container);*/
 
         } else if (id == R.id.nav_food) {
 
             WebView webView = (WebView)findViewById(R.id.web_view);
-            webView.setVisibility(View.INVISIBLE);
+            webView.setVisibility(View.GONE);
 
             TextView view = (TextView) findViewById(R.id.main_page);
             view.setVisibility(View.VISIBLE);
 
-            //order("YooFood.xls");
+            order("YooFood.xls");
 
-            LayoutInflater inflater = getLayoutInflater();
+            /*LayoutInflater inflater = getLayoutInflater();
             LinearLayout container = (LinearLayout) findViewById(R.id.content_second);
-            inflater.inflate(R.layout.activity_main, container);
+            inflater.inflate(R.layout.activity_main, container);*/
 
         } else if (id == R.id.nav_slideshow) {
 
