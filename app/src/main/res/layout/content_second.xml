@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Welcome to the World of Yokai Watch!"
             android:id="@+id/main_page"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </android.support.v4.widget.NestedScrollView>
 
 

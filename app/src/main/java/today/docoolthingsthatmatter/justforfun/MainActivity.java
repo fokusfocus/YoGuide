@@ -96,31 +96,40 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_yokai) {
-            TextView view = (TextView) findViewById(R.id.main_page);
+
+            /*TextView view = (TextView) findViewById(R.id.main_page);
             view.setVisibility(View.GONE);
 
             WebView webView = (WebView)findViewById(R.id.web_view);
-            webView.setVisibility(View.VISIBLE);
+            webView.setVisibility(View.VISIBLE);*/
+            //closeCurrentLayout();
 
-            displayWeb();
+
 
             /*LayoutInflater inflater = getLayoutInflater();
             LinearLayout container = (LinearLayout) findViewById(R.id.content_main);
             inflater.inflate(R.layout.activity_main, container);*/
 
+            displayWeb();
+
+
         } else if (id == R.id.nav_food) {
 
-            WebView webView = (WebView)findViewById(R.id.web_view);
+            /*WebView webView = (WebView)findViewById(R.id.web_view);
             webView.setVisibility(View.GONE);
 
             TextView view = (TextView) findViewById(R.id.main_page);
-            view.setVisibility(View.VISIBLE);
+            view.setVisibility(View.VISIBLE);*/
 
-            order("YooFood.xls");
+            //closeCurrentLayout();
+
+
 
             /*LayoutInflater inflater = getLayoutInflater();
             LinearLayout container = (LinearLayout) findViewById(R.id.content_second);
             inflater.inflate(R.layout.activity_main, container);*/
+
+            order("YooFood.xls");
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -135,6 +144,16 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void closeCurrentLayout(int n){
+        if(n==1) {
+            TextView view = (TextView) findViewById(R.id.main_page);
+            view.setVisibility(View.GONE);
+
+            WebView webView = (WebView)findViewById(R.id.web_view);
+            webView.setVisibility(View.VISIBLE);
+        }
     }
 
     //display message in main window
