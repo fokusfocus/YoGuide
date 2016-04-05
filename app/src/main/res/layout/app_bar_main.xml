@@ -21,11 +21,11 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_second"/>
+    <!--<include layout="@layout/content_second"/>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_main" />-->
 
-    <!--<include layout="@layout/content_super"/>-->
+    <include layout="@layout/content_super"/>
 
 
 

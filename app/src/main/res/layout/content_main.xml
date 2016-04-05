@@ -11,8 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:id="@+id/content_main"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="today.docoolthingsthatmatter.justforfun.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="today.docoolthingsthatmatter.justforfun.MainActivity">
+    <!--tools:showIn="@layout/app_bar_main"-->
 
     <WebView
         android:layout_width="match_parent"
@@ -22,12 +22,5 @@
 
     </WebView>
 
-
-<!--    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the World of Yokai Watch!"
-        android:id="@+id/main_page"
-        android:layout_weight="1"/>-->
 
 </LinearLayout>

@@ -9,20 +9,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:id="@+id/content_second"
+    android:id="@+id/content_fusion"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="today.docoolthingsthatmatter.justforfun.MainActivity">
+    <!--tools:showIn="@layout/app_bar_main"-->
 
-    <android.support.v4.widget.NestedScrollView
+    <WebView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Welcome to the World of Yokai Watch!"
-            android:id="@+id/main_page"
-            android:layout_weight="1" />
-    </android.support.v4.widget.NestedScrollView>
+        android:layout_height="wrap_content"
+        android:id="@+id/web_view2"
+        android:layout_weight="1">
+
+    </WebView>
 
 
 </LinearLayout>

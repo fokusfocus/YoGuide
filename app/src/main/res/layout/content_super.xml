@@ -22,8 +22,8 @@
                 android:id="@+id/super_page" />
 
             <ImageView
-                android:layout_width="380sp"
-                android:layout_height="380sp"
+                android:layout_width="350sp"
+                android:layout_height="350sp"
                 android:src="@drawable/yokailogo"/>
 
 </LinearLayout>

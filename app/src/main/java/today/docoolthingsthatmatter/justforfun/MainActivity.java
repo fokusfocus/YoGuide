@@ -1,6 +1,6 @@
 package today.docoolthingsthatmatter.justforfun;
 
-import android.content.res.AssetManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -10,15 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.webkit.WebView;
-import android.widget.TextView;
-
-import java.io.InputStream;
-
-import jxl.Cell;
-import jxl.Sheet;
-import jxl.Workbook;
 
 
 public class MainActivity extends AppCompatActivity
@@ -95,45 +86,26 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if (id == R.id.nav_tips) {
+
+        }
+
         if (id == R.id.nav_yokai) {
 
-            /*TextView view = (TextView) findViewById(R.id.main_page);
-            view.setVisibility(View.GONE);
-
-            WebView webView = (WebView)findViewById(R.id.web_view);
-            webView.setVisibility(View.VISIBLE);*/
-            //closeCurrentLayout();
-
-
-
-            /*LayoutInflater inflater = getLayoutInflater();
-            LinearLayout container = (LinearLayout) findViewById(R.id.content_main);
-            inflater.inflate(R.layout.activity_main, container);*/
-
-            displayWeb();
-
+            Intent myIntent = new Intent(this, YokaiList.class);
+            startActivityForResult(myIntent, 0);
 
         } else if (id == R.id.nav_food) {
 
-            /*WebView webView = (WebView)findViewById(R.id.web_view);
-            webView.setVisibility(View.GONE);
+            Intent myIntent = new Intent(this, FavoriteFood.class);
+            startActivityForResult(myIntent, 0);
 
-            TextView view = (TextView) findViewById(R.id.main_page);
-            view.setVisibility(View.VISIBLE);*/
+        } else if (id == R.id.nav_fusion) {
 
-            //closeCurrentLayout();
+            Intent myIntent = new Intent(this, FusionList.class);
+            startActivityForResult(myIntent, 0);
 
-
-
-            /*LayoutInflater inflater = getLayoutInflater();
-            LinearLayout container = (LinearLayout) findViewById(R.id.content_second);
-            inflater.inflate(R.layout.activity_main, container);*/
-
-            order("YooFood.xls");
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_map) {
 
         } else if (id == R.id.nav_share) {
 
@@ -146,7 +118,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void closeCurrentLayout(int n){
+    /*public void closeCurrentLayout(int n){
         if(n==1) {
             TextView view = (TextView) findViewById(R.id.main_page);
             view.setVisibility(View.GONE);
@@ -154,20 +126,20 @@ public class MainActivity extends AppCompatActivity
             WebView webView = (WebView)findViewById(R.id.web_view);
             webView.setVisibility(View.VISIBLE);
         }
-    }
+    }*/
 
     //display message in main window
-    public void displayMessage(String message) {
+    /*public void displayMessage(String message) {
         TextView cardMessage = (TextView) findViewById(R.id.main_page);
         cardMessage.setText(message);
-    }
+    }*/
 
-    public void displayWeb() {
+    /*public void displayWeb() {
         WebView myWebView = (WebView) findViewById(R.id.web_view);
         myWebView.loadUrl("http://www.thonky.com/yo-kai-watch/list-of-yo-kai");
-    }
+    }*/
 
-    public void order(String fileName) {
+    /*public void order(String fileName) {
         try {
             AssetManager am = getAssets();
             InputStream is = am.open(fileName);
@@ -189,7 +161,7 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
 
         }
-    }
+    }*/
 
 
 }

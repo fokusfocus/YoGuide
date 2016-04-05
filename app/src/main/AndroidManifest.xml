@@ -20,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".YokaiList"></activity>
+        <activity android:name=".FavoriteFood"></activity>
+        <activity android:name=".FusionList"></activity>
+
+
     </application>
 
 </manifest>
